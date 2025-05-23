@@ -32,11 +32,6 @@
             margin: 15px 0;
             text-transform: uppercase;
         }
-        h3 {
-            font-size: 18px;
-            font-weight: 300;
-            margin: 10px 0;
-        }
         .divider {
             border-top: 1px solid #D4AF37;
             width: 50px;
@@ -56,11 +51,6 @@
         .timeline-event {
             font-size: 16px;
             text-transform: uppercase;
-        }
-        .footer {
-            margin-top: 40px;
-            font-size: 12px;
-            color: #777;
         }
     </style>
 </head>
@@ -101,10 +91,6 @@
                 </div>
             </div>
         </section>
-
-        <div class="footer">
-            raq4.github.io
-        </div>
     </div>
 </body>
 </html>
