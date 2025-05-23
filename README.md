@@ -5,84 +5,128 @@
     <title>Константин & Алина | 17.07.2025</title>
     <style>
         body {
-            background-color: #1A1A1A;
-            background-image: url('data:image/png;base64,...'); /* Зернистая текстура как на ваших картинках */
+            background-color: #0F0F0F;
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABZSURBVGhD7cExAQAwDMCg+zfdm1gQ+JOGO5KkJEkqkpIkqUhKkqQiKUmSiqQkSSqSkiSpSEqSpCIpSZKKpCRJKpKSJKlISpKkIilJkoqkJEkqkpIkqUhKkqQiKUmSfgf5AswXZOD0AAAAAElFTkSuQmCC');
             color: #FFF;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            line-height: 1.3;
+            letter-spacing: 0.5px;
         }
         .container {
-            max-width: 800px;
+            max-width: 600px;
             margin: 0 auto;
-            padding: 40px;
+            padding: 30px 20px;
             text-align: center;
         }
         h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            letter-spacing: 2px;
+            font-size: 42px;
+            font-weight: 400;
+            margin: 0 0 10px;
+            text-transform: uppercase;
         }
         h2 {
-            font-size: 1.8rem;
-            color: #D4AF37; /* Золотой акцент */
-            margin: 30px 0;
+            font-size: 24px;
+            font-weight: 300;
+            margin: 15px 0;
+            text-transform: uppercase;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 300;
+            margin: 10px 0;
+        }
+        p {
+            font-size: 16px;
+            margin: 8px 0;
+        }
+        .divider {
+            border-top: 1px solid #D4AF37;
+            width: 50px;
+            margin: 20px auto;
         }
         .timeline {
-            margin: 40px 0;
-            text-align: left;
-            display: inline-block;
+            text-align: center;
+            margin: 30px 0;
         }
-        .timeline p {
-            font-size: 1.2rem;
-            margin: 15px 0;
-            position: relative;
-            padding-left: 30px;
+        .timeline-item {
+            margin: 20px 0;
         }
-        .timeline p:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 10px;
-            height: 10px;
-            background: #D4AF37;
-            border-radius: 50%;
+        .timeline-time {
+            font-size: 24px;
+            font-weight: 300;
+        }
+        .timeline-event {
+            font-size: 16px;
+            text-transform: uppercase;
         }
         .map-button {
             background: transparent;
             border: 1px solid #D4AF37;
             color: #FFF;
-            padding: 12px 25px;
-            margin-top: 20px;
+            padding: 10px 20px;
+            margin-top: 15px;
+            font-size: 14px;
+            text-transform: uppercase;
             cursor: pointer;
-            transition: all 0.3s;
         }
-        .map-button:hover {
-            background: #D4AF37;
+        .footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #777;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Главный экран -->
+        <!-- Приглашение -->
         <section>
-            <h1>КОНСТАНТИН & АЛИНА</h1>
+            <h1>КОНСТАНТИН</h1>
+            <h1>&</h1>
+            <h1>АЛИНА</h1>
+            <div class="divider"></div>
             <h2>17 ИЮЛЯ 2025</h2>
-            <p>Дорогие наши родные и друзья! Мы женимся!</p>
+        </section>
+
+        <!-- Приветствие -->
+        <section>
+            <h2>ДОРОГИЕ</h2>
+            <h3>НАШИ РОДНЫЕ</h3>
+            <h3>И ДРУЗЬЯ!</h3>
+            <div class="divider"></div>
+            <p>МЫ ЖЕНИМСЯ!</p>
+            <p>И ОЧЕНЬ ХОТИМ РАЗДЕЛИТЬ</p>
+            <p>С ВАМИ ЭТОТ СЧАСТЛИВЫЙ ДЕНЬ</p>
+            <div class="divider"></div>
+            <p>ЖДЁМ ВАС НА НАШЕЙ СВАДЬБЕ!</p>
+            <p>НАЧАЛО В 17:00</p>
         </section>
 
         <!-- Тайминг -->
         <section>
             <h1>ТАЙМИНГ</h1>
             <div class="timeline">
-                <p>17:00 — Сбор гостей</p>
-                <p>18:00 — Бракосочетание</p>
-                <p>19:00 — Банкет</p>
-                <p>21:00 — Первый танец</p>
-                <p>22:00 — Свадебный торт</p>
+                <div class="timeline-item">
+                    <div class="timeline-time">17:00</div>
+                    <div class="timeline-event">Сбор гостей</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">18:00</div>
+                    <div class="timeline-event">Бракосочетание</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">19:00</div>
+                    <div class="timeline-event">Банкет</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">21:00</div>
+                    <div class="timeline-event">Первый танец</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">22:00</div>
+                    <div class="timeline-event">Свадебный торт</div>
+                </div>
             </div>
         </section>
 
@@ -93,6 +137,17 @@
             <p>Ессентуки, ул. Фридриха Энгельса, 2Ак1</p>
             <button class="map-button">ПОСТРОИТЬ МАРШРУТ</button>
         </section>
+
+        <div class="footer">
+            proinvite.ru — частный доступ
+        </div>
     </div>
+
+    <script>
+        // Кнопка "Построить маршрут"
+        document.querySelector('.map-button').addEventListener('click', function() {
+            window.open('https://yandex.ru/maps/?text=Ресторан Рио, Ессентуки, ул. Фридриха Энгельса, 2Ак1');
+        });
+    </script>
 </body>
 </html>
