@@ -2,103 +2,97 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Приглашение на свадьбу</title>
+    <title>Константин & Алина | 17.07.2025</title>
     <style>
         body {
-            font-family: 'Times New Roman', serif;
-            color: #5a4a3a;
-            text-align: center;
+            background-color: #1A1A1A;
+            background-image: url('data:image/png;base64,...'); /* Зернистая текстура как на ваших картинках */
+            color: #FFF;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            background-image: url('IMG_7149.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            position: relative;
-        }
-        body::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(249, 243, 233, 0.85);
-            z-index: -1;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 40px 20px;
-            position: relative;
+            padding: 40px;
+            text-align: center;
         }
         h1 {
-            font-size: 2.5em;
+            font-size: 3rem;
             margin-bottom: 10px;
-            font-weight: normal;
-        }
-        .names {
-            font-size: 3em;
-            margin: 30px 0;
-            font-weight: bold;
             letter-spacing: 2px;
         }
-        .date, .place, .details {
-            margin: 20px 0;
-            font-size: 1.5em;
+        h2 {
+            font-size: 1.8rem;
+            color: #D4AF37; /* Золотой акцент */
+            margin: 30px 0;
         }
-        .separator {
-            font-size: 2em;
-            margin: 20px 0;
-        }
-        .footer {
-            margin-top: 50px;
-            font-style: italic;
-        }
-        .map-link {
+        .timeline {
+            margin: 40px 0;
+            text-align: left;
             display: inline-block;
-            margin-top: 10px;
-            color: #8b6b4a;
-            text-decoration: none;
-            border-bottom: 1px dashed;
         }
-        .map-link:hover {
-            color: #5a4a3a;
+        .timeline p {
+            font-size: 1.2rem;
+            margin: 15px 0;
+            position: relative;
+            padding-left: 30px;
+        }
+        .timeline p:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 10px;
+            height: 10px;
+            background: #D4AF37;
+            border-radius: 50%;
+        }
+        .map-button {
+            background: transparent;
+            border: 1px solid #D4AF37;
+            color: #FFF;
+            padding: 12px 25px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .map-button:hover {
+            background: #D4AF37;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Приглашаем вас на нашу свадьбу</h1>
-        
-        <div class="names">
-            <div>Константин</div>
-            <div class="separator">&</div>
-            <div>Алина</div>
-        </div>
-        
-        <div class="date">
-            17 июля 2025
-        </div>
-        
-        <div class="place">
-            Ресторан "Рио" <br>
-            Ессентуки, улица Фридриха Энгельса, 2Ак1
-        </div>
-        
-        <div class="details">
-            Начало в 17:00
-        </div>
-        
-        <a href="https://yandex.ru/maps/org/rio/1087377952/" class="map-link" target="_blank">
-            Посмотреть на карте
-        </a>
-        
-        <div class="footer">
-            Будем рады видеть вас в этот особенный день!
-        </div>
+        <!-- Главный экран -->
+        <section>
+            <h1>КОНСТАНТИН & АЛИНА</h1>
+            <h2>17 ИЮЛЯ 2025</h2>
+            <p>Дорогие наши родные и друзья! Мы женимся!</p>
+        </section>
+
+        <!-- Тайминг -->
+        <section>
+            <h1>ТАЙМИНГ</h1>
+            <div class="timeline">
+                <p>17:00 — Сбор гостей</p>
+                <p>18:00 — Бракосочетание</p>
+                <p>19:00 — Банкет</p>
+                <p>21:00 — Первый танец</p>
+                <p>22:00 — Свадебный торт</p>
+            </div>
+        </section>
+
+        <!-- Локация -->
+        <section>
+            <h1>ЛОКАЦИЯ</h1>
+            <p>Ресторан "Рио"</p>
+            <p>Ессентуки, ул. Фридриха Энгельса, 2Ак1</p>
+            <button class="map-button">ПОСТРОИТЬ МАРШРУТ</button>
+        </section>
     </div>
 </body>
 </html>
