@@ -7,17 +7,32 @@
     <style>
         body {
             font-family: 'Times New Roman', serif;
-            background-color: #f9f3e9;
             color: #5a4a3a;
             text-align: center;
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            background-image: url('IMG_7149.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(249, 243, 233, 0.85);
+            z-index: -1;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px 20px;
+            position: relative;
         }
         h1 {
             font-size: 2.5em;
