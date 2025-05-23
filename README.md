@@ -37,10 +37,6 @@
             font-weight: 300;
             margin: 10px 0;
         }
-        p {
-            font-size: 16px;
-            margin: 8px 0;
-        }
         .divider {
             border-top: 1px solid #D4AF37;
             width: 50px;
@@ -61,16 +57,6 @@
             font-size: 16px;
             text-transform: uppercase;
         }
-        .map-button {
-            background: transparent;
-            border: 1px solid #D4AF37;
-            color: #FFF;
-            padding: 10px 20px;
-            margin-top: 15px;
-            font-size: 14px;
-            text-transform: uppercase;
-            cursor: pointer;
-        }
         .footer {
             margin-top: 40px;
             font-size: 12px;
@@ -80,27 +66,13 @@
 </head>
 <body>
     <div class="container">
-        <!-- Приглашение -->
+        <!-- Заголовок -->
         <section>
             <h1>КОНСТАНТИН</h1>
             <h1>&</h1>
             <h1>АЛИНА</h1>
             <div class="divider"></div>
             <h2>17 ИЮЛЯ 2025</h2>
-        </section>
-
-        <!-- Приветствие -->
-        <section>
-            <h2>ДОРОГИЕ</h2>
-            <h3>НАШИ РОДНЫЕ</h3>
-            <h3>И ДРУЗЬЯ!</h3>
-            <div class="divider"></div>
-            <p>МЫ ЖЕНИМСЯ!</p>
-            <p>И ОЧЕНЬ ХОТИМ РАЗДЕЛИТЬ</p>
-            <p>С ВАМИ ЭТОТ СЧАСТЛИВЫЙ ДЕНЬ</p>
-            <div class="divider"></div>
-            <p>ЖДЁМ ВАС НА НАШЕЙ СВАДЬБЕ!</p>
-            <p>НАЧАЛО В 17:00</p>
         </section>
 
         <!-- Тайминг -->
@@ -130,24 +102,9 @@
             </div>
         </section>
 
-        <!-- Локация -->
-        <section>
-            <h1>ЛОКАЦИЯ</h1>
-            <p>Ресторан "Рио"</p>
-            <p>Ессентуки, ул. Фридриха Энгельса, 2Ак1</p>
-            <button class="map-button">ПОСТРОИТЬ МАРШРУТ</button>
-        </section>
-
         <div class="footer">
-            proinvite.ru — частный доступ
+            raq4.github.io
         </div>
     </div>
-
-    <script>
-        // Кнопка "Построить маршрут"
-        document.querySelector('.map-button').addEventListener('click', function() {
-            window.open('https://yandex.ru/maps/?text=Ресторан Рио, Ессентуки, ул. Фридриха Энгельса, 2Ак1');
-        });
-    </script>
 </body>
 </html>
